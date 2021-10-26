@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Gabriela';
+    src: url('Gabriela-Black.woff2') format('woff2'),
+        url('Gabriela-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriela';
+    src: url('Gabriela-ExtraBold.woff2') format('woff2'),
+        url('Gabriela-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriela';
+    src: url('Gabriela-Light.woff2') format('woff2'),
+        url('Gabriela-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriela-Regular';
+    src: url('Gabriela-Regular.woff2') format('woff2'),
+        url('Gabriela-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gabriela';
+    src: url('Gabriela-Medium.woff2') format('woff2'),
+        url('Gabriela-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
