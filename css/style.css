@@ -37,12 +37,20 @@ body{
     justify-content: space-between;
     padding: 40px 0 20px 0;
     border-bottom: 2px solid#FFDFA1;
+    align-items: center;
 }
 .logo figure{
     width:  218px;
 }
-.profile figure{
-    width: 52px
+.profile a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.profile a:hover{
+    color: #FFDFA1
 }
 .profile a:last-child{
     display: none;
@@ -195,7 +203,7 @@ hsl(296deg 53% 89% / 16%) 88.04%);
     line-height: 61px;
     color: #1F114D;
     padding-right: 115px;
-    width : 467px;
+    width : 445px;
 }
 .about_question p{
     font-style: normal;
@@ -221,6 +229,10 @@ hsl(296deg 53% 89% / 16%) 88.04%);
     background: #fff;
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
+    transition: all 1s ease-in-out;
+}
+.product_con:hover{
+    background-color: #8FBAA5;
 }
 .product_con figure{
     min-height: 175px;
@@ -312,7 +324,7 @@ hsl(296deg 53% 89% / 16%) 88.04%);
 }
 .register_green{
     background-color: #81B29A;
-    background-position-y: 633%;
+    background-position-y: 425%;
 
 }
 .register_green h2{
@@ -331,7 +343,7 @@ hsl(296deg 53% 89% / 16%) 88.04%);
 }
 
 footer .container{
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 .footer_con h2{
     font-style: normal;
@@ -421,6 +433,9 @@ footer .container{
     align-items: center;
     min-height: 40px;
 }
+.social li{
+    width: 50px;
+}
 .social a{
     transition: all .6s ease-in-out;
     margin-right: 20px;
@@ -449,7 +464,15 @@ footer .container{
     color: #1F114D;
     padding: 25px 0;
 }
-
+.register p{
+    max-width: 635px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #1F114D;
+    font-style: normal;
+    font-weight: normal;
+}
 @media only screen and (max-width: 768px) {
     .container_sm{
         padding: 0;
@@ -574,7 +597,7 @@ footer .container{
     }
     .menu li:last-child{
         display: block;
-        width: 60px;
+        /* width: 60px; */
     }
     .menu{
         transition: all .5s ease-in-out;
