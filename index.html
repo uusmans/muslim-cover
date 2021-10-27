@@ -19,16 +19,25 @@
                     <div class="logo"><a href="#">
                             <figure><img src="images/logo.svg" alt="logo"></figure>
                         </a></div>
-                    <div class="profile"><a href="#">
+                    <div class="profile">
+                        <a href="#">
                             <figure><img src="images/profile.svg" alt="profile"></figure>
-                        </a></div>
+                        </a>
+                        <a href="#" class="btn_menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-                <ul class="menu">
+                <div class="menu">
+                    <ul>
+                    <li class="close"><i class="fa fa-times-circle-o" aria-hidden="true"></i></li>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Refer a Friend</a></li>
-                </ul>
+                    <li><a href="#"><figure><img src="images/profile.svg" alt="profile"></figure></a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <div class="banner">
@@ -202,10 +211,12 @@
                     </div>
                     <div class="question_slide">
                         <h3>What’s your name?</h3>
-                        <form action="#">
+                        <form action="#" id="profileForm">
+                        <section data-step="0">
                             <label for="#">
                                 <input type="text" id="#" name="Full Name" placeholder="Enter Full Name">
                             </label>
+                        </section>
                         </form>
                     </div>
                 </div>
@@ -270,7 +281,11 @@
             <p class="copyright">© Copyright Muslim Cover. All Rights Reserved</p>
         </footer>
     </section>
-    
 </body>
+<script src="script/jquery.js"></script>
+<script src="script/jquery.steps.js"></script>
+<script src="script/jquery.steps.min.js"></script>
+
+<script src="script/script.js"></script>
 
 </html>

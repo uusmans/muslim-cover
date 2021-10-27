@@ -44,7 +44,10 @@ body{
 .profile figure{
     width: 52px
 }
-.menu {
+.profile a:last-child{
+    display: none;
+}
+.menu ul{
     max-width: 643px;
     margin: 0 auto;
     margin-top: 32px;
@@ -52,6 +55,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.close{
+    display: none;
+}
+.menu li:last-child{
+    display: none;
 }
 .menu a{
     font-style: normal;
@@ -145,6 +154,7 @@ hsl(296deg 53% 89% / 16%) 88.04%);
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
+    z-index: 9;
 }
 .heading_main::after{
     content: '';
@@ -374,6 +384,7 @@ footer .container{
     padding: 12px 18px;
     margin: 20px 0;
     width: 100%;
+    color: #fff;
 }
 .footer_con input::placeholder{
     font-style: normal;
@@ -396,7 +407,7 @@ footer .container{
     width: 74px;
     border: 0;
     text-align: center;
-    padding: 6px 0;
+    padding: 7px 0;
     position: absolute;
     top: 59%;
     transform: translateY(-50%);
@@ -437,4 +448,171 @@ footer .container{
     text-align: center;
     color: #1F114D;
     padding: 25px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container_sm{
+        padding: 0;
+    }
+    .banner .container_sm{
+        padding: 0 20px;
+    }   
+    .inner_about,.about_question{
+        flex-direction: column;
+    }
+    .inner_about,.about_question,.product,.register{
+        padding: 30px 0;
+    }
+    .about_con figure{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .about_con,.question_con,.product_con li{
+        width: 100%;
+    }
+    .about_question h2{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .register_container{
+        padding: 50px 30px;
+    }
+    footer .container{
+        padding: 30px 20px;
+    }
+    .footer_flex{
+        flex-wrap: wrap;
+    }
+    .footer_con{
+        padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .product_flex{
+        justify-content: center;
+    }
+    .product_con{
+        width: calc(100% - 100px);
+    }
+    .inner_banner{
+        flex-direction: column;
+    }
+    .inner_banner figure,.about_con figure{
+        display: none;
+    }
+    .mb_60{
+        margin-bottom: 30px;
+    }
+    .btn_mt{
+        margin-top: 30px;
+    }
+    .product_con h2 br{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .product_con figure{
+        width: 100% !important;
+    }
+    .product_con{
+        width: calc(100% - 20px);
+    }
+    header .container{
+        padding: 0;
+    }
+    .inner_header{
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .profile a:first-child{
+        display: none;
+    }
+    .profile a:last-child{
+        display: block;
+        font-size: 20px;
+        color: #fff;
+    }
+    .about_question h2{
+        width: 100%;
+    }
+    .register_container {
+        padding: 30px 20px;
+    }
+    .question_slide{
+        padding: 15px 0;
+    }
+    .question_slide form {
+        max-width: calc(100% - 20px);
+    }
+    .copyright,.about_con p,.inner_banner p,.about_question p,.footer_con p, .footer_con a{
+        font-size: 16px;
+    }
+    .heading_main{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .footer_con h2{
+        font-size: 20px;
+    }
+    .inner_banner h2,.about_question h2,.product_con h2{
+        font-size: 30px;
+    }
+    .heading_main::after {
+        top: calc(100% + -1px);
+    }
+    .footer_con{
+        padding: 5px 0;
+    }
+    .footer_con li a,.footer_flex h3,.about_con p span{
+        font-size: 18px;
+    }
+    .logo figure{
+        width: 180px;
+    }
+    .profile figure {
+        width: 32px;
+    }
+    .menu li:last-child{
+        display: block;
+        width: 60px;
+    }
+    .menu{
+        transition: all .5s ease-in-out;
+        display: none;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+    .menu ul{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .menu a{
+        padding: 30px 0;
+        font-size: 30px;
+    }
+    .close{
+        z-index: 999;
+        display: block;
+        color: #81B29A;
+        font-size: 40px;
+        position: fixed;
+        top: 10px;
+        right: 30px;
+    }
+    .menu a.active::after{
+        display: none;
+    }
+    .menu a.active{
+        color: #FFDFA1;
+    }
+    .scroll_hidden{
+        overflow: hidden;
+    }
 }
