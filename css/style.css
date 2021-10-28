@@ -286,7 +286,8 @@ hsl(296deg 53% 89% / 16%) 88.04%);
     margin: 0 auto;
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 47px 0;
+    padding: 20px 0;
+    padding-bottom: 20px;
 }
 .mb_60{
     margin-bottom: 60px;
@@ -294,7 +295,8 @@ hsl(296deg 53% 89% / 16%) 88.04%);
 .question_slide h3{
     font-style: normal;
     font-weight: bold;
-    font-size: 18;
+    font-size: 18px;
+    margin-bottom: 20px;
     line-height: 124.33%;
     text-align: center;
     color: #1F114D;
@@ -304,20 +306,64 @@ hsl(296deg 53% 89% / 16%) 88.04%);
     margin: 0 auto;
     margin-top: 15px;
 }
-.question_slide label input{
+.question_slide label input,.question_slide select{
     border: 0.876543px solid rgba(0, 0, 0, 0.19);
     border-radius: 2.62963px;
     width: 100%;
     padding: 15px 20px;
     padding-bottom: 13px;
+    appearance: none;
+    outline: none;
 }
-.question_slide label input::placeholder{
+
+.question_slide label input::placeholder,.question_slide select{
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 15px;
     text-transform: capitalize;
     color: #A2A2A2;
+}
+.question_slide label input[type="checkbox"]{
+    appearance: auto;
+    display: inline-block;
+}
+input.cb1 + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #1F114D;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked + label:after {
+    position: relative;
+    top: -6px;
+    left: 2px;
+    content: '\2714';
+    font-size: 14px;
+  }
+  input.cb1 {
+    display: none;
+  }
+.align_center,.centers{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gabriela-Light';
+}
+.centers{
+    height: 45px;
+}
+#profileForm select{
+    background-image: url('../images/select.svg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+}
+.three{
+    max-width: 300px !important;
 }
 .register_container:last-child{
     margin-top: 33px;
@@ -473,6 +519,23 @@ footer .container{
     font-style: normal;
     font-weight: normal;
 }
+.btn_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.back_btn,.next_btn{
+    width: 35px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.margin_bb{
+    margin-bottom: 40px;
+}
+.slide_none{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
     .container_sm{
         padding: 0;
@@ -531,6 +594,13 @@ footer .container{
     }
     .product_con h2 br{
         display: none;
+    }
+    .question_slide label{
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .question_slide h3{
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 500px) {

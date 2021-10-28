@@ -218,31 +218,81 @@
                             Register your interest now and get an Early Bird Discount of 20% on the life of all the policies you source via Muslim Cover.
                             </p>
                     </div>
-                    <div class="question_slide">
-                        <h3>What’s your name?</h3>
-                    
+                    <div class="question_slide">                    
                         <form action="#" id="profileForm">
                         <section ng-show="currentTab == 0">
+                            <h3>What’s your name?</h3>
                             <label for="#">
-                                <input type="text" id="#" name="Full Name" placeholder="Enter Full Name">
+                                <input type="text" id="#" name="Name" placeholder="Enter Full Name">
                             </label>
                         </section>
                         <section ng-show="currentTab == 1">
+                            <h3>Salam [first name], how old are you?</h3>
                             <label for="#">
-                                <input type="text" id="#" name="Full Name" placeholder="Enter Full Name">
+                                <input type="date" id="#" name="date-of-birth" placeholder="Enter Your Date of Birth">
                             </label>
                         </section>
-                        <section ng-show="currentTab == 1">
+                        <section ng-show="currentTab == 2">
+                            <h3>Select Your Profession</h3>
                             <label for="#">
-                                <input type="text" id="#" name="Full Name" placeholder="Enter Full Name">
+                                <select name="cars" id="cars">
+                                    <option value="Select Your Profession" name="profession">Select Your Profession</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                  </select>
                             </label>
                         </section>
-                        <section data-step="0">
+                        <section ng-show="currentTab == 3" >
+                            <h3>Smoking status?</h3>
                             <label for="#">
-                                <input type="text" id="#" name="Full Name" placeholder="Enter Full Name">
+                                <input type="text" id="#" name="text" name="smoker" placeholder="Smoker / Non-Smoker">
                             </label>
+                        </section>
+                        <section ng-show="currentTab == 4">
+                            <h3>First name, are you:</h3>
+                            <label for="#">
+                                <select name="status" id="status">
+                                    <option value="Select Your Status" >Select Your Status</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                  </select>
+                            </label>
+                        </section>
+                        <section ng-show="currentTab == 5">
+                            <h3>So, which of these products are you interested in?</h3>
+                            <label for="#">
+                                <select name="insurance" id="insurance">
+                                    <option value="Select an Insurance">Select an Insurance</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                  </select>
+                            </label>
+                        </section>
+                        <section ng-show="currentTab == 6" >
+                            <h3>Could you please provide your contact details for us to get in touch with further updates about our products and their launch?</h3>
+                            <label for="#" style="width: calc(50% - 13px);display: inline-block;">
+                                <input type="text" id="#" name="email" placeholder="Please enter your email">
+                            </label>
+                            <label for="#" style="width: calc(50% - 13px);display: inline-block;">
+                                <input type="text" id="#" name="phone" placeholder="Please enter your phone">
+                            </label>
+                        </section>
+                        <section ng-show="currentTab == 7" >
+                            <h3>Thank you for your time [FIRST NAME]</h3>
+                            <p class="three">Ee will get in touch with exciting news soon! InshaAllah!</p>
                         </section>
                         </form>
+                        <div class="btn_con">
+                            <div class="back_btn" ng-click="previousSlide()">
+                                <img src="images/back.svg" alt="">
+                            </div>
+                            <div class="next_btn" ng-click="nextSlide()">
+                                <img src="images/next.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="register_container register_green">
@@ -251,8 +301,8 @@
                     </div>
                     <p>Text: Why keep the goodness of a 20% discount to yourself? Sharing with your brothers is not
                         just an Islamic teaching but it also the Australian way!</p>
-                    <div class="center">
-                        <a href="#" class="btn">Register Now
+                    <div class="center margin_bb">
+                        <a href="#" class="btn slide_toggle">Register Now
                             <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -260,6 +310,110 @@
                                     fill="#FFDFA1" />
                             </svg>
                         </a>
+                    </div>
+                    <div class="question_slide slide_none">                    
+                        <form action="#" id="profileForm">
+                        <section ng-show="currentTab2 == 0">
+                            <h3>Let's get your name first!</h3>
+                            <label for="#">
+                                <input type="text" id="#" name="name" placeholder="Enter Full Name">
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 1">
+                            <h3>Who are you sharing this discount with?</h3>
+                            <label for="#">
+                                <input type="text" id="#" name="friend-full-name" placeholder="Enter Friend’s Full Name">
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 2">
+                            <h3>Would (friend first name) be happy for you to share their details with us?</h3>
+                            <div class="centers">
+                                <div class="align_center">
+                                    <input type="checkbox" id="yes" class="cb1">
+                                    <label class="label_check" for="yes"></label>&nbsp YES
+                                </div>
+                                <div class="align_center">
+                                    <input type="checkbox" id="no" class="cb1">
+                                    <label class="label_check" for="no"></label>&nbsp NO
+                                </div>
+                            </div>
+                        </section>
+                        <section ng-show="currentTab2 == 3" >
+                            <h3>Great! Let's get their contact details:</h3>
+                            <label for="#" style="width: calc(50% - 13px);display: inline-block;">
+                                <input type="text" id="#" name="email" placeholder="Please enter your email">
+                            </label>
+                            <label for="#" style="width: calc(50% - 13px);display: inline-block;">
+                                <input type="text" id="#" name="phone" placeholder="Please enter your phone">
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 4">
+                            <h3>So, which of these products would (Friend first name) be interested in?</h3>
+                            <label for="#">
+                                <select name="status" id="status">
+                                    <option value="Select Your Status" >Select an Insurance</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                  </select>
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 5">
+                            <h3>Would you like to provide more information about (friend first name)?</h3>
+                            <div class="centers">
+                                <div class="align_center">
+                                    <input type="checkbox" id="yes2" class="cb1">
+                                    <label class="label_check" for="yes2"></label>&nbsp YES
+                                </div>
+                                <div class="align_center">
+                                    <input type="checkbox" id="no2" class="cb1">
+                                    <label class="label_check" for="no2"></label>&nbsp NO
+                                </div>
+                            </div>
+                        </section>
+                        <section ng-show="currentTab2 == 6">
+                            <h3>What's their date of birth?</h3>
+                            <label for="#">
+                                <input type="date" id="#" name="birth-date" placeholder="Enter Your Date of Birth">
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 7">
+                            <h3>What's their occupation?</h3>
+                            <label for="#">
+                                <select name="occupation" id="occupation">
+                                    <option value="Select Your Status" >Select Your Profession</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                    <option value="default">default</option>
+                                  </select>
+                            </label>
+                        </section>
+                        <section ng-show="currentTab2 == 8">
+                            <h3>Do they smoke?</h3>
+                            <div class="centers">
+                                <div class="align_center">
+                                    <input type="checkbox" id="yes3" class="cb1">
+                                    <label class="label_check" for="yes3"></label>&nbsp YES
+                                </div>
+                                <div class="align_center">
+                                    <input type="checkbox" id="no3" class="cb1">
+                                    <label class="label_check" for="no3"></label>&nbsp NO
+                                </div>
+                            </div>
+                        </section>
+                        <section ng-show="currentTab2 == 9" >
+                            <h3>Perfect, that's all we need referrer's name !</h3>
+                            <p>We are glad you decided to share the Early Bird Discount with (Friend First Name) and we're sure they would be just as happy!</p>
+                        </section>
+                        </form>
+                        <div class="btn_con">
+                            <div class="back_btn" ng-click="previousSlide2()">
+                                <img src="images/back.svg" alt="">
+                            </div>
+                            <div class="next_btn" ng-click="nextSlide2()">
+                                <img src="images/next.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
